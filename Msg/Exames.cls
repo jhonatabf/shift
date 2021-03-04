@@ -13,7 +13,7 @@ Storage Default
 </Value>
 </Data>
 <DefaultData>ExamesDefaultData</DefaultData>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }
