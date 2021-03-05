@@ -22,7 +22,13 @@ ClassMethod pedidos() As %Status
 		Set tPayload = ##class(%DynamicAbstractObject).%FromJSON(tPayloadRaw)
 			
 		Set pRequest = ##class(Shift.Msg.Request).%New()
-		Set pRequest.Identificador 		    = tPayload.identificador
+		Set pRequest.Identificador 		    = tPayload.Identificador
+		Set pRequest.Paciente.Codigo 		= tPayload.Paciente.Codigo
+		Set pRequest.Paciente.Nome			= tPayload.Paciente.Nome
+		Set pRequest.Paciente.Sexo			= tPayload.Paciente.Sexo
+		Set pRequest.Exames.Codigo 			= tPayload.Exames.Codigo
+		Set pRequest.Exames.Descricao 		= tPayload.Exames.Descricao
+		
 		
 		Set tSC = pServico.Roteador("Shift.BO.Cache",pRequest,.output)
 		$$$ThrowOnError(tSC)

@@ -1,5 +1,4 @@
-/// Description
-Class Shift.Msg.Paciente Extends Ens.Request
+Class Shift.Obj.Request.Paciente Extends (%SerialObject, %XML.Adaptor)
 {
 
 Property Codigo As %Integer;
@@ -10,8 +9,7 @@ Property Sexo As %String;
 
 Storage Default
 {
-<Data name="PacienteDefaultData">
-<Subscript>"Paciente"</Subscript>
+<Data name="PacienteState">
 <Value name="1">
 <Value>Codigo</Value>
 </Value>
@@ -22,8 +20,9 @@ Storage Default
 <Value>Sexo</Value>
 </Value>
 </Data>
-<DefaultData>PacienteDefaultData</DefaultData>
-<Type>%Storage.Persistent</Type>
+<State>PacienteState</State>
+<StreamLocation>^Shift.Obj.Request.PacienteS</StreamLocation>
+<Type>%Storage.Serial</Type>
 }
 
 }

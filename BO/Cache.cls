@@ -13,8 +13,8 @@ Method SalvaPedidos(pInput As Shift.Msg.Request, Output pOutput As Shift.Msg.Res
         Set tSC = pessoa.%Save()
 
         Set pedido = ##class(Shift.Obj.Pedidos.Pedido).%New()
-        Set pedido.Codigo       = pInput.Identificador_""_pInput.Pedido.OrdemServico
-        Set pedido.OrdemServico = $PIECE($HOROLOG,",")_""_$PIECE($HOROLOG,",",1)
+        Set pedido.OrdemServico = $PIECE($HOROLOG,",")_""_$PIECE($HOROLOG,",",2)
+        Set pedido.Codigo       = pInput.Identificador_""_pedido.OrdemServico
         Set pedido.Pedido       = pessoa
         Set tSC = pedido.%Save()
 
@@ -24,7 +24,17 @@ Method SalvaPedidos(pInput As Shift.Msg.Request, Output pOutput As Shift.Msg.Res
         Set paciente.Sexo       = pInput.Paciente.Sexo
         Set paciente.Paciente   = pessoa
         Set tSC = paciente.%Save()
-        
+
+     //   For i=1:1:pInput.Exames.Count()
+	//{
+		Set exame = ##class(Shift.Obj.Pedidos.Exame).%New()
+		
+		Set exame.Codigo = pInput.Exames.Codigo
+		Set exame.Descricao = pInput.Exames.Descricao
+        Set exame.Exame = pessoa
+		Set tSC = exame.%Save()
+	//}
+
         Set pOutput.status = 1
 
         Quit tSC

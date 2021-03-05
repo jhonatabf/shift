@@ -8,9 +8,9 @@ Property Identificador As %String;
 
 Property Pedido As Shift.Msg.Pedido;
 
-Property Paciente As Shift.Msg.Paciente;
+Property Paciente As Shift.Obj.Request.Paciente;
 
-Property Exames As list Of Shift.Obj.Exame;
+Property Exames As Shift.Obj.Request.Exames;
 
 Storage Default
 {

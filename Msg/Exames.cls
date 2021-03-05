@@ -2,7 +2,7 @@
 Class Shift.Msg.Exames Extends Ens.Request
 {
 
-Property Exame As Shift.Obj.Exame;
+Property Exame As list Of Shift.Obj.Exame;
 
 Storage Default
 {
