@@ -26,7 +26,7 @@ Storage Default
 <IdLocation>^Shift.Obj.Pedidos.ObjetoC("ChaveExame")</IdLocation>
 <IndexLocation>^Shift.Obj.Pedidos.ExameI</IndexLocation>
 <StreamLocation>^Shift.Obj.Pedidos.ExameS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

@@ -31,7 +31,7 @@ Storage Default
 <IdLocation>^Shift.Obj.Pedidos.ObjetoC("ChavePaciente")</IdLocation>
 <IndexLocation>^Shift.Obj.Pedidos.PacienteI</IndexLocation>
 <StreamLocation>^Shift.Obj.Pedidos.PacienteS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

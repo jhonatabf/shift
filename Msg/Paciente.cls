@@ -23,7 +23,7 @@ Storage Default
 </Value>
 </Data>
 <DefaultData>PacienteDefaultData</DefaultData>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

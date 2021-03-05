@@ -25,7 +25,7 @@ Storage Default
 <IdLocation>^Shift.Obj.Pedidos.ObjetoD</IdLocation>
 <IndexLocation>^Shift.Obj.Pedidos.ObjetoI</IndexLocation>
 <StreamLocation>^Shift.Obj.Pedidos.ObjetoS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

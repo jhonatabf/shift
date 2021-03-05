@@ -13,7 +13,7 @@ Storage Default
 </Value>
 </Data>
 <DefaultData>ResponseDefaultData</DefaultData>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

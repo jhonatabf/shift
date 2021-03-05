@@ -26,7 +26,7 @@ Storage Default
 <IdLocation>^Shift.Obj.Pedidos.ObjetoC("ChavePedido")</IdLocation>
 <IndexLocation>^Shift.Obj.Pedidos.PedidoI</IndexLocation>
 <StreamLocation>^Shift.Obj.Pedidos.PedidoS</StreamLocation>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }

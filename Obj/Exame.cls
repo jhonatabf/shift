@@ -18,7 +18,7 @@ Storage Default
 </Data>
 <State>ExameState</State>
 <StreamLocation>^Shift.Obj.ExameS</StreamLocation>
-<Type>%Library.CacheSerialState</Type>
+<Type>%Storage.Serial</Type>
 }
 
 }

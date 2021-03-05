@@ -18,7 +18,7 @@ Storage Default
 </Value>
 </Data>
 <DefaultData>PedidoDefaultData</DefaultData>
-<Type>%Library.CacheStorage</Type>
+<Type>%Storage.Persistent</Type>
 }
 
 }
